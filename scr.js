@@ -7,7 +7,7 @@ const getData = async () => {
             url: apiDataMusicURL
           })
         .then(function (response) {
-            //sua lai dong nay
+            //s
             const gamesDataArray = response.data.albums.items
             
             const container = document.getElementById("bodycontainer")
