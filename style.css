@@ -62,3 +62,7 @@ nav ul li a:hover {
 .image{
     margin-left: 5%;
 }
+.album-cover {
+    width: 100%;
+    height: auto;
+}

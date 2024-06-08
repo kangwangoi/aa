@@ -1,4 +1,4 @@
-const apiDataMusicURL = "https://www.steamwebapi.com/steam/api/items?key=AMVABEHZ4JS519DG&page=1&max=50&price_min=0&price_max=500000&=0&limit=20&numberOfTopResults=5"
+const apiDataMusicURL = "https://www.steamwebapi.com/steam/api/items?key=AMVABEHZ4JS519DG&page=1&max=20&price_min=0&price_max=500000&=0&limit=20&numberOfTopResults=5"
 
 const getData = async () => {
     try {
@@ -8,13 +8,10 @@ const getData = async () => {
           })
         .then(function (response) {
             //s
-            const gamesDataArray = response.data.albums.items
-            
+            const gamesDataArray = response.data
+            console.log(gamesDataArray);
             const container = document.getElementById("bodycontainer")
-            gamesDataArray.forEach((album) => {
-
-                const data = album.data
-
+            gamesDataArray.forEach((game) => {
 
                 const albumCard = document.createElement('div')
 
@@ -22,9 +19,8 @@ const getData = async () => {
 
                 albumCard.innerHTML = `
                 <div class="card">
-                    <a href="https://open.spotify.com/album/${data.uri.split(':')[2]}" class="card-img-top album-cover"><img src=${data.coverArt.sources[0].url} style="width: 158px; padding: 10px 10px 0 10px;"></a>
+                    <img src=${game.itemimage} style="width: 158px; padding: 10px 10px 0 10px;" >
                     <div class="card-body">
-                        <div class="card-text">${data.artists.items[0].profile.name}</p>
                     </div>
                 </div>`
 
@@ -37,3 +33,4 @@ const getData = async () => {
     }
 }
 //jh
+getData();  
