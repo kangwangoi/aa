@@ -89,8 +89,9 @@ const onclickk = document.getElementById('button');
             })
             .catch((error) => {
               console.log(error);
-              console.error("Error sending email verification:", error);
               alert(error)
+              console.error("Error sending email verification:", error);
+              
 })})
 
 

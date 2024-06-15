@@ -8,11 +8,13 @@ body{
     height:130px;
     color: white;
     flex-wrap: wrap;
-    
 }
-.intro{
-    color:white;
+.nav_container{
+    flex-wrap: wrap;
+
 }
+.body{background-color: rgb(5, 6, 52);
+height: 100%;}
 .item_nav{
     width: 200px;
     padding-top: 37px;
@@ -51,6 +53,7 @@ nav ul li a {
 nav ul li a:hover {
     color: black;
     transition: all 0.3s ease;
+    
 }
 /* .lg_con_nav{
     background-color: black;
@@ -67,3 +70,10 @@ nav ul li a:hover {
     height: auto;
 }
 
+.input_search{
+width: 500px;
+margin: 0 0 0 0;
+padding: 0 0 0 0;
+font-size:30px ;
+font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -15,11 +15,18 @@
 
 //                 const albumCard = document.createElement('div')
 
-//                 albumCard.className = "col-md-2 album-card"
-
+//                 albumCard.className = "col-md-  2 album-card"
+//                 let price = ""
+//                 if (game.priceavg<1||game.priceavg==0){
+//                      price = "free"
+//                 } else {
+//                      price = gane.priceavg
+//                 }
 //                 albumCard.innerHTML = `
-//                 <div class="card">
+//                 <div class="card" style="display:flex;">
 //                     <img src=${game.itemimage} style="width: 158px; padding: 10px 10px 0 10px;" >
+//                     <h1>${game.itemname}</h1>
+//                     <p>${price}</p>
 //                     <div class="card-body">
 //                     </div>
 //                 </div>`
@@ -34,3 +41,16 @@
 // }
 // //jh
 // getData();  
+// Search albums
+const search = document.getElementById("input_search")
+const name = ""
+search.addEventListener("input" , (item) =>{
+name = item.value.trim()
+searchItem()
+})
+function searchItem(item){
+    if (search != ""){
+        const con = document.querySelector("#gameContainer")
+        const gameName = document.querySelectorAll(".itemname")
+    }
+}
