@@ -54,3 +54,6 @@ function searchItem(item){
         const gameName = document.querySelectorAll(".itemname")
     }
 }
+gameName.array.forEach(element => {
+    element.itemname = 'none'
+});
