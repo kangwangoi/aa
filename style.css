@@ -77,6 +77,17 @@ padding: 0 0 0 0;
 font-size:30px ;
 font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.bodycontainer{
+.gameContainer {
     display: flex;
+}
+.cardStyle{
+    display: flex;
+}
+h1 {
+    text-align: center;
+    padding: 50px 0;
+}
+.messageNotFound{
+    font-size:100px ;
+    color: gray;
 }
