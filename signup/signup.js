@@ -78,6 +78,7 @@ const onclickk = document.getElementById('button');
                 // const querySnapshot = await getDocs(collection(db,"users"));
                 // console.log("querySnapshot", querySnapshot);
                 //get data
+                            const name_value = document.getElementById('name').value
                             const email_value = document.getElementById('email').value;
                             const password_value = document.getElementById('password').value;
                             console.log(email_value)
@@ -86,17 +87,16 @@ const onclickk = document.getElementById('button');
                 //console.log data
                            
                 // querySnapshot.forEach((doc) => {
-                // doc.data() is never undefined for query doc snapshots
+                // // doc.data() is never undefined for query doc snapshots
                 // console.log(doc.id, " => ", doc.data());
-                //});
+                // });
                     // alert("CONFIRM PASSWORD IS INCORRECT")
-                
-                createUserWithEmailAndPassword(auth, email_value, password_value)
-                
+                    console.log(name_value,auth, email_value, password_value);
+                createUserWithEmailAndPassword(name_value,auth, email_value, password_value)
                 .then((userCredential) => {
                   // Signed up 
-                  const user = userCredential.user;
-                  alert("User sign up successfully with", user.email);
+                  const users = userCredential.user;
+                  alert("User sign up successfully with", users.email);
                   location.href = '../index.html'
                 })
             } catch (error) {
