@@ -1,25 +1,23 @@
 
-                const itemPer = 20;
-                let pageBegin = 1;
-                let pageEnd = Math.ceil(91 / itemPer); // Example item count for calculation
-                let currentPage = 1; // Initialize currentPage
+const itemPer = 20;
+let currentPage = 1; 
+let totalItems = 91; 
+let pageEnd = Math.ceil(totalItems / itemPer);
             
-                function pagePre() {
-                    if (currentPage > 1) {
-                        pageBegin--;
-                        appendDataElement();
-                        document.getElementById("pageID").innerHTML = `Page ${pageBegin} of ${pageEnd}`;
-                    }
-                }
+function pagePre() {
+    if (currentPage > 1) {
+        currentPage--;
+        document.getElementById("pageID").innerHTML = `Page ${currentPage} of ${pageEnd}`;
+    }
+}
+
             
-                function pageNext() {
-                    if (pageEnd > pageBegin) {
-                        pageBegin++;
-                        appendDataElement();
-                        document.getElementById("pageID").innerHTML = `Page ${pageBegin} of ${pageEnd}`;
-                    }
-                }
-            
+function pageNext() {
+    if (currentPage < pageEnd) {
+        currentPage++;
+        document.getElementById("pageID").innerHTML = `Page ${currentPage} of ${pageEnd}`;
+    }
+}
                 // document.getElementById("pageID").innerHTML = `Page ${pageBegin} of ${pageEnd}`;
             
 const urlGame = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
@@ -51,13 +49,15 @@ const appendDataElement = (data) => {
         gameCard.className = `col-md-3 game-card game-card-${game.id}`;
         // console.log("thumbnail: ", game.thumbnail, " - title: ", game.title);
         gameCard.innerHTML = `
-            <div class="card" style="color:white; background-color:black; width:100; margin:10px 0 10px 0; padding:0 0 0 0; heigh:300px">
-                <img src=${game.thumbnail} style="width: 99%; padding:10px;"/>
+            <div class="card" style="color:white; background-color:black; width:100; margin:10px 0 10px 0; padding:0; heigh:500px">
+            <a class="button3" href="detail.html?id=${game.id}&genre=${game.genre}"><img src=${game.thumbnail} style="width: 99%; padding:10px;"/></a>   
                 <div class="card-body" style="width:250px">
-                    <h5 style="width:500px">${game.title || 'N/A'}</h5>
+                    <h5 style="width:auto">${game.title || 'N/A'}</h5>
                     <p style="font-size:19px;">${game.genre}  |  ${game.release_date}</p>
+                    <div>
                     <a href="${game.game_url}" class="button">Play</a>
                     <a href="detail.html?id=${game.id}&genre=${game.genre}"class="button">View</a>
+                    </div>
                 </div>
             </div>
         `;

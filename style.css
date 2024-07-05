@@ -1,4 +1,6 @@
-
+body{
+    background-color: #000000;
+}
 .nav_contain{
     display: flex;
     justify-content: space-evenly;
@@ -85,6 +87,7 @@ font-family: Georgia, 'Times New Roman', Times, serif;
 .card{
     display: flex;
     background-color: #000000;
+    height: 500px;
 }
 h1 {
     text-align: center;
@@ -99,8 +102,10 @@ h1 {
     background: url('image/cs2.jpg') no-repeat center center/cover;
     color: white;
     text-align: center;
+    display: block;
     padding: 5rem 1rem;
-    
+    display: flex;
+    justify-content: center;
 }
      .button {
         position: relative;
@@ -108,16 +113,21 @@ h1 {
         padding: 10px 20px;
         color: #03e9f4;
         font-size: 16px;
+        width: 200px;
         text-decoration: none;
         text-transform: uppercase;
         overflow: hidden;
         transition: .5s;
-        margin-top: 40px;
+        /* margin-top: 40px; */
         letter-spacing: 4px;
         background-color: #000000;
+        text-align: center;
+        justify-content: center;
+        
+        
       }
       
-      .btn:hover {
+      .button:hover {
         background: #03e9f4;
         color: #fff;
         border-radius: 5px;
@@ -131,4 +141,69 @@ h1 {
         cursor: pointer;
         background: none;
       }
-     
+.row{
+    background-color: #000000;
+    padding-right: 0px;
+    margin-right: 0px;
+}  
+.button2 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    /* margin-top: 40px; */
+    letter-spacing: 4px;
+    background-color: #000000;
+    text-align: center;
+    
+  }
+  
+  .button2:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+.popular-searches{
+    text-align: center;
+}
+
+.nav_img{
+ 
+}
+.button3 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: rebeccapurple;
+    font-size: 16px;
+    width: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .9s;
+    /* margin-top: 40px; */
+    letter-spacing: 4px;
+    background-color: #000000;
+    text-align: center;
+    
+  }
+  
+  .button3:hover {
+    background: rgb(183, 112, 255);
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rebeccapurple,
+                0 0 25px  rebeccapurple,
+                0 0 50px  rebeccapurple,
+                0 0 100px rebeccapurple;
+  }
