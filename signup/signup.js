@@ -92,12 +92,12 @@ const onclickk = document.getElementById('button');
                 // });
                     // alert("CONFIRM PASSWORD IS INCORRECT")
                     console.log(name_value,auth, email_value, password_value);
-                createUserWithEmailAndPassword(name_value,auth, email_value, password_value)
+                createUserWithEmailAndPassword(auth, email_value, password_value)
                 .then((userCredential) => {
                   // Signed up 
                   const users = userCredential.user;
                   alert("User sign up successfully with", users.email);
-                  location.href = '../index.html'
+                  location.href = '../index2.html'
                 })
             } catch (error) {
                 console.log(error);

@@ -54,9 +54,9 @@ const appendDataElement = (data) => {
                 <div class="card-body" style="width:250px">
                     <h5 style="width:auto">${game.title || 'N/A'}</h5>
                     <p style="font-size:19px;">${game.genre}  |  ${game.release_date}</p>
-                    <div>
+                    <div style="justify-content: center;">
                     <a href="${game.game_url}" class="button">Play</a>
-                    <a href="detail.html?id=${game.id}&genre=${game.genre}"class="button">View</a>
+                    <a href="detail.html?id=${game.id}&genre=${game.genre}"class="button">About Game</a>
                     </div>
                 </div>
             </div>

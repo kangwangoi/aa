@@ -47,6 +47,13 @@ nav ul div li a {
    font-size: 40px;
    width: 120px;
 }
+nav ul div li p {
+    color: white;
+    text-decoration: none;
+    font-weight:lighter;
+   font-size: 40px;
+   width: 120px;
+}
 
 nav ul div li:hover {
     color: red;
@@ -195,7 +202,7 @@ h1 {
     letter-spacing: 4px;
     background-color: #000000;
     text-align: center;
-    
+  
   }
   
   .button3:hover {

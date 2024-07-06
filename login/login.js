@@ -84,7 +84,7 @@ const onclickk = document.getElementById('button');
               alert("Login sucessfully");
               console.log("success");
       
-              location.href = '../index.html'
+              location.href = '../index2.html'
               // ...
             })
             .catch((error) => {

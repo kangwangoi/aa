@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <script src="https://www.steamwebapi.com/steam/api/items?key=AMVABEHZ4JS519DG&page=1&max=50&price_min=0&price_max=500000"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Yoooooooooo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+</head>
+<body>
+  <div class="navigation">
+    <nav>
+      <ul class="nav_contain">
+    <img src="image/t.png" alt="" width="180px" height="130px" class="nav_img">
+  
+        <div class="nav_contain">
+          <div style="display: flex;">
+    <li class="item_nav"><a href="#">Home</a></li>
+      <li class="item_nav"><a href="#">More about</a></li>
+      
+      <!-- <hr style="color: black;"> -->
+    </div>
+  </div>
+  
+  <input type="text" placeholder="Which game do you want to find?" class="input_search" id="input_search">
+</ul>
+  </nav>
+  </div>
+<!-- end nav -->
+<h1 style="background-color: black; color: white; margin: 0;">Welcome to The Infinity Games</h1>   
+<!-- aa -->
+
+
+<section class="gt">
+  <div>
+  <h1>Cheaper games,Popular games</h1>
+  <p class="popular-searches">Popular Searches: Content Warning, Ready or Not, CS:GO,</p>
+  </div>
+</section>
+
+<!-- 
+<img src="image/blackhole.png" alt="" class="image" width="90%" height="700px"> 
+<script>
+  w3.slideshow(".image", 5250);
+</script> -->
+<div id="bodycontainer" class="row">
+  <div id="gameContainer" class="row"></div> 
+  <div id="messageNotFound" class="messageNotFound"></div>
+</div>
+
+<div style="display: flex; justify-content: center;">
+<button onclick="pagePre()">Previous</button>
+<p id="pageID"></p>
+<button onclick="pageNExt()">Next</button>
+</div>
+<script src="scr.js"></script>
+
+</body>
+</html> 
